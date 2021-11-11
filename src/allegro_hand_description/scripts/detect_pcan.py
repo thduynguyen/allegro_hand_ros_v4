@@ -13,10 +13,10 @@ import re
 
 def pcan_search():
     # Look for all possible file matches.
-    filelist = glob.glob('/dev/pcanusb*')
+    filelist = glob.glob('/dev/pcanusbfd*')
 
     # Search for the correct format: pcanusbN
-    device_re = re.compile('.*pcanusb[0-9]+')
+    device_re = re.compile('.*pcanusbfd[0-9]+')
 
     gen = (x for x in filelist if device_re.search(x))
     valid_files = [x for x in gen]

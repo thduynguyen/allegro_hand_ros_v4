@@ -55,8 +55,8 @@
 
   <!-- ls -l /dev/pcan* to see your open CAN ports. Auto means find it
        automatically, and ignores the CAN_DEVICE argument. -->
-  <arg name="AUTO_CAN" default="true" />
-  <arg name="CAN_DEVICE" default="/dev/pcanusb1" />
+  <arg name="AUTO_CAN" default="false" />
+  <arg name="CAN_DEVICE" default="/dev/pcanusbfd32" />
 
   <arg name="PARAMS_DIR" default="$(find allegro_hand_parameters)" />
   <arg name="KEYBOARD" default="true" />
